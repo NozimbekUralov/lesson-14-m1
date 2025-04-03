@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <template class="js-incomplete-temp">
+        <li class="item">
+            <div class="content">
+                <h3 class="js-title">title</h3>
+                <p class="js-description">description</p>
+            </div>
+            <div class="actions">
+                <button class="js-delete-btn">delete</button>
+                <button class="js-edit-btn">edit</button>
+                <button class="js-complete-btn">mark as completed</button>
+            </div>
+        </li>
+    </template>
+    <template class="js-completed-temp">
+        <li class="item">
+            <div class="content">
+                <h3 class="js-title">title</h3>
+                <p class="js-description">description</p>
+            </div>
+            <div class="actions">
+                <button class="js-delete-btn">delete</button>
+            </div>
+        </li>
+    </template>
+
+    <div>
+        <form class="form">
+
+            <div class="input">
+                <input type="text" name="title" placeholder="Title" autofocus required>
+                <textarea name="description" required placeholder="Description" cols="30" rows="3"></textarea>
+            </div>
+            <button class="js-add-todo-btn">add todo</button>
+        </form>
+        <input type="search" name="search" placeholder="Search...">
+    </div>
+    <div class="todos">
+        <ul class="js-all-todos list">
+            <li class="item">
+                <div class="content">
+                    <h3>title</h3>
+                    <p>description</p>
+                </div>
+                <div class="actions">
+                    <button class="delete">delete</button>
+                    <button class="edit">edit</button>
+                    <button>mark as completed</button>
+                </div>
+            </li>
+        </ul>
+        <ul class="js-incomplete-todos list">
+            <li class="item">
+                <div class="content">
+                    <h3>title</h3>
+                    <p>description</p>
+                </div>
+                <div class="actions">
+                    <button class="delete">delete</button>
+                    <button class="edit">edit</button>
+                    <button>mark as completed</button>
+                </div>
+            </li>
+        </ul>
+        <ul class="js-completed-todos list">
+            <li class="item">
+                <div class="content">
+                    <h3>title</h3>
+                    <p>description</p>
+                </div>
+                <div class="actions">
+                    <button class="delete">delete</button>
+                    <button class="edit">edit</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
